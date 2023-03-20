@@ -1,0 +1,58 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:react/recommended",
+    "eslint-config-airbnb",
+    "prettier"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".css"]
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "mocha": true,
+    "node": true,
+    "es6": true,
+    "commonjs": true
+  },
+  "rules": {
+    "no-console" : 0,
+    "no-return-await": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 1,
+    "import/no-unresolved": [2, {"ignore": ["^@/","^ice"]}],
+    "react/jsx-uses-react": 1,
+    "react/jsx-no-undef": 2,
+    "react/jsx-wrap-multilines": 2,
+    "react/no-string-refs": 0,
+    "react/react-in-jsx-scope" : 0,
+    "react/jsx-one-expression-per-line" : 1,
+    "react/no-unstable-nested-components" : 1,
+    "react/prop-types" : 0,
+    "react/function-component-definition": 1,
+    "react/jsx-filename-extension": ["error",{"extensions": [".js", ".jsx", ".tsx", ".ts"]}]
+  },
+  "plugins": [
+    "eslint-plugin-import",
+    "eslint-plugin-react"
+  ],
+  "globals": {
+  }
+}

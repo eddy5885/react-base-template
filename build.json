@@ -1,0 +1,16 @@
+{
+  "vite": true,
+  "publicPath":"./",
+  "hash": "hash",
+  "dropLogLevel": "log",
+  "polyfill":"usage",
+  "plugins": [
+    [
+      "build-plugin-ignore-style",
+      {
+        "libraryName": "antd"
+      }
+    ]
+  ],
+  "browserslist": "last 10 versions, Firefox ESR, > 1%, ie >= 9, iOS >= 8, Android >= 4"
+}
